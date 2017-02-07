@@ -18,12 +18,6 @@ function BlockSpawner(game, speed, level) {
 				}
 			}
 		}
-		/* spawning algo
-		 * level 1 block spawn chance = 1.5/100
-		 * level increases by .5/100 chance for each level
-		 * block size is random between 10x60 and 60x10
-		 *
-		 */
 		if (Math.random() * 100 > 100 - this.level / 2 - 1) {
 			var x = Math.random() * canvas.width
 			var w = Math.random() * 50 + 10

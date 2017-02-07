@@ -30,16 +30,6 @@ function Player(game, x, y, speed, ySpeed) {
 				dead += 1
 			}
 		}
-		/*if (dead === 2) {
-			if (this.branchState > 1)
-				this.branchState = 1
-			this.branchStates = [1, 4]
-		}
-		if (dead === 3) {
-			if (this.branchState > 0)
-				this.branchState = 0
-			this.branchStates = [1]
-		}*/
 		for (var i = 0; i < this.lines.length; i++) {
 			var line = this.lines[i]
 			line.keys = global_controls.keyMaps[this.branchStates[this.branchState]][i]
@@ -144,21 +134,6 @@ function Player(game, x, y, speed, ySpeed) {
 		if (this.branchState === 0) {//bring pieces back together
 			this.merge()
 		} 
-		/*else if (this.branchState === 1) {//separate
-			var moveCnt = 1
-			var numLeftOf = 0
-			if (alive === 2) {
-				this.splitAll()
-			} else {
-				for (var i = 2; i < this.lines.length; i++) {
-					var line = this.lines[i]
-					line.tarX = 1 * line.r * 2 + line.x
-				}
-			}
-		} else if (this.branchState === 2) {//split all
-			this.splitAll()
-
-		}*/
 		else{
 			this.splitAll()
 		}

@@ -103,53 +103,7 @@ function HUD(game, pre) {
 			}
 
 			var keyAccess = Object.keys(keys)
-            var left = document.getElementById('left-controls')
-            var right = document.getElementById('right-controls')
-            if(JSON.stringify(lastGlobalControls) !== JSON.stringify(keys)){
-                lastGlobalControls = keys
-                left.innerHTML=''
-                right.innerHTML=''
-                    
-                for (var i = 0; i < keyAccess.length; i++) {
-				    var k = keyAccess[i]
-                    if(keyAccess.length===1 && keys[k].controls[1]==='F' && keys[k].controls[0]==='A'){//multi
-                        var colors = keys[k].colors
-                        var width = Math.floor(1/keys[k].colors.length*100)
-                        for(var i =0;i<colors.length;i++){
-                            left.innerHTML+='<div class="con multi" style="width:'+width+'%;background-color:'+keys[k].colors[i]+'" id="'+keys[k].controls[0]+'"></div>'
-                            right.innerHTML+='<div class="con multi" style="width:'+width+'%;background-color:'+keys[k].colors[i]+'" id="'+keys[k].controls[1]+'"></div>'
-                        }
-                        
-                    } else {
-                        var height = Math.floor(1/keyAccess.length*100)
-                        left.innerHTML+='<div class="con"\
-                            style="height:'+height+'%;background-color:'+keys[k].colors[0]+'"\
-                            id="'+keys[k].controls[0]+'"></div>'
-                        right.innerHTML+='<div class="con"\
-                            style="height:'+height+'%;background-color:'+keys[k].colors[0]+'"\
-                            id="'+keys[k].controls[1]+'"></div>'
-                    }
-                }
-                var lefts = Array.apply([],left.getElementsByTagName('div'))
-                var rights = Array.apply([],right.getElementsByTagName('div'))
-                lefts.concat(rights).forEach(function(el){
-                    el.addEventListener('touchstart', function(e){
-                        //triggerEvents(this.id.charCodeAt(0))
-                        keyState[this.id] = this.id.charCodeAt(0)
-                    })
-                    el.addEventListener('touchend', function(e){
-                        delete keyState[this.id]
-                    })
-                })
-            }
-			/*for (var i = 0; i < keyAccess.length; i++) {
-				var k = keyAccess[i]
-
-				this.drawKey(ctx, keys[k].controls[0], keys[k].colors, sX, sY)
-				sX += 30
-				this.drawKey(ctx, keys[k].controls[1], keys[k].colors, sX, sY)
-				sX += 30
-			}*/
+           
 		}
 	}
 
@@ -191,19 +145,5 @@ function HUD(game, pre) {
 			this.game.play = false
 			this.game.draw()
 		}
-	}
-	if (!this.pre) {
-		keyListeners.push(['p', function() {
-			if (!this.game.paused && this.game.play) {
-				this.game.paused = true
-				this.game.play = false
-				this.game.draw()
-			} else if (this.game.paused && !this.game.play) {
-				this.game.paused = false
-				this.game.play = true
-				this.game.update()
-			}
-		}.bind(this)])
-		document.addEventListener("webkitvisibilitychange", this.suspend.bind(this), false);
 	}
 }

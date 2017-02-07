@@ -41,9 +41,9 @@ function Line(game, color, x, y, r, keys, xSpeed, ySpeed) {
 		}
 		if (this.tarX == -1) {
 			if (keyState[this.keys[0]]) {//left
-				this.x -= this.speed * timeDelta * .05
+				this.left(timeDelta)
 			} else if (keyState[this.keys[1]]) {//right
-				this.x += this.speed * timeDelta * .05
+				this.right(timeDelta)
 			}
 		} else {
 			if (this.tarXRate == -1) {
@@ -92,6 +92,16 @@ function Line(game, color, x, y, r, keys, xSpeed, ySpeed) {
 		}
 
 	}
+	
+	this.left = function(timeDelta){
+		this.x -= this.speed * timeDelta * .05
+	}
+	
+	this.right = function(timeDelta){
+		this.x += this.speed * timeDelta * .05
+	}
+	
+	
 	this.draw = function(ctx) {
 		var tail = this.points[0]
 		var head = this.points[this.points.length-1]

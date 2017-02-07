@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Ava Snake</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<link rel="stylesheet" href="public/m/css/style.css">
+
+</head>
+<body>
+	<div id="left"><div id="left-text">L</div></div>
+	<div id="right"><div id="right-text">R</div></div>
+	<canvas id="canv" style="background-color: #a3a1a1"></canvas>
+	<audio autoplay loop id="bgaudio">
+		<source src="public/audio/background.ogg"></source>
+		<source src="public/audio/background.mp3"></source>
+	</audio>
+	<div style="display: none">
+		<div class="controls-text">
+			Edit Controls (click) <a onclick="global_controls.reset()">reset</a>
+		</div>
+		<div id='controls'></div>
+	</div>
+	<script src="public/m/js/util.js"></script>
+	<script src="public/m/js/hud.js"></script>
+	<script src="public/m/js/powerups.js"></script>
+	<script src="public/m/js/controls.js"></script>
+	<script src="public/m/js/line.js"></script>
+	<script src="public/m/js/player.js"></script>
+	<script src="public/m/js/blocks.js"></script>
+	<script src="public/m/js/game.js"></script>
+	<script src="public/m/js/main.js"></script>
+</body>
+</html>
