@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tproject xmlns="http://www.tizen.org/tproject">
+    <platforms>
+        <platform>
+            <name>mobile-2.4</name>
+        </platform>
+    </platforms>
+    <package>
+        <blacklist>
+            <path value=".git" type="dir"/>
+            <path value=".git/COMMIT_EDITMSG" type="file"/>
+            <path value=".git/FETCH_HEAD" type="file"/>
+            <path value=".git/HEAD" type="file"/>
+            <path value=".git/MERGE_HEAD" type="file"/>
+            <path value=".git/MERGE_MSG" type="file"/>
+            <path value=".git/branches" type="dir"/>
+            <path value=".git/config" type="file"/>
+            <path value=".git/hooks" type="dir"/>
+            <path value=".git/index" type="file"/>
+            <path value=".git/logs" type="dir"/>
+            <path value=".git/logs/HEAD" type="file"/>
+            <path value=".git/logs/refs" type="dir"/>
+            <path value=".git/logs/refs/heads" type="dir"/>
+            <path value=".git/logs/refs/heads/master" type="file"/>
+            <path value=".git/logs/refs/remotes" type="dir"/>
+            <path value=".git/logs/refs/remotes/origin" type="dir"/>
+            <path value=".git/logs/refs/remotes/origin/master" type="file"/>
+            <path value=".git/objects" type="dir"/>
+            <path value=".git/objects/11" type="dir"/>
+            <path value=".git/objects/11/6ef87768c1c6c24bbf7da30e3a9e4dff071440" type="file"/>
+            <path value=".git/objects/14" type="dir"/>
+            <path value=".git/objects/14/eabcd5821059eafc1d7cef99d1f57d3b1d1d16" type="file"/>
+            <path value=".git/objects/18" type="dir"/>
+            <path value=".git/objects/18/5d33fcd9ab0be661dc1ee2798300cc6746b3a1" type="file"/>
+            <path value=".git/objects/1e" type="dir"/>
+            <path value=".git/objects/1e/9c8ad0ad30f93118cec8a45f0fb88be9358734" type="file"/>
+            <path value=".git/objects/1f" type="dir"/>
+            <path value=".git/objects/1f/97413eac11214f527296377b69e5c6122be8ad" type="file"/>
+            <path value=".git/objects/2c" type="dir"/>
+            <path value=".git/objects/2c/437f093d8acae22b738f416baa39cc8f3c8527" type="file"/>
+            <path value=".git/objects/2d" type="dir"/>
+            <path value=".git/objects/2d/da58df78bd518f3c950e01a67b545f9ce3e691" type="file"/>
+            <path value=".git/objects/2d/f466d98b7fa6f08c1f0a33147a34857d278387" type="file"/>
+            <path value=".git/objects/34" type="dir"/>
+            <path value=".git/objects/34/73b0356807b7d86bb72a8db97bf1daff32a88f" type="file"/>
+            <path value=".git/objects/3c" type="dir"/>
+            <path value=".git/objects/3c/e72ab8bca20fb1c624af44d24ffebf2727ccc7" type="file"/>
+            <path value=".git/objects/44" type="dir"/>
+            <path value=".git/objects/44/6bb5296994b9da986dd6725f8b71be8cb1af4b" type="file"/>
+            <path value=".git/objects/48" type="dir"/>
+            <path value=".git/objects/48/ca2984a8a1ba0385b70f158c5025e12f755be6" type="file"/>
+            <path value=".git/objects/51" type="dir"/>
+            <path value=".git/objects/51/268be491cfecfe5d7d6c4ce2771724793263fd" type="file"/>
+            <path value=".git/objects/60" type="dir"/>
+            <path value=".git/objects/60/bd0426186d1089cb362344de8cfc36cd0ad0a3" type="file"/>
+            <path value=".git/objects/63" type="dir"/>
+            <path value=".git/objects/63/3e0b5e0763dee77cad2927752c0aee2177be3e" type="file"/>
+            <path value=".git/objects/69" type="dir"/>
+            <path value=".git/objects/69/617cbc03b092866fdeb5be21aff3e76aa3ee95" type="file"/>
+            <path value=".git/objects/71" type="dir"/>
+            <path value=".git/objects/71/0bfc14783331e952c165a1c27eb0804e450d3a" type="file"/>
+            <path value=".git/objects/7b" type="dir"/>
+            <path value=".git/objects/7b/7e107af7a2cb452844f5583b69260482e2e000" type="file"/>
+            <path value=".git/objects/7d" type="dir"/>
+            <path value=".git/objects/7d/63328dbcec1099d9ef433a1c6bb55644ab9248" type="file"/>
+            <path value=".git/objects/96" type="dir"/>
+            <path value=".git/objects/96/681ceb7f67cca679f808a09ba66e443608a9fb" type="file"/>
+            <path value=".git/objects/ac" type="dir"/>
+            <path value=".git/objects/ac/ddc4bace9ef10ae6c17788f26ddbc47ea8a522" type="file"/>
+            <path value=".git/objects/bc" type="dir"/>
+            <path value=".git/objects/bc/b648f555caa4c03320cf24aa5056f7f9212703" type="file"/>
+            <path value=".git/objects/c1" type="dir"/>
+            <path value=".git/objects/c1/bd34ad4d29d7628df84d91521f6791f59cbaef" type="file"/>
+            <path value=".git/objects/c3" type="dir"/>
+            <path value=".git/objects/c3/3daf02b49a3c5b50cf17db955555221203b194" type="file"/>
+            <path value=".git/objects/c4" type="dir"/>
+            <path value=".git/objects/c4/d4cd327b91a6d1f0d8a4c2444067fc22188326" type="file"/>
+            <path value=".git/objects/c5" type="dir"/>
+            <path value=".git/objects/c5/2574324455927ec0a58e688330e414fe35457b" type="file"/>
+            <path value=".git/objects/cd" type="dir"/>
+            <path value=".git/objects/cd/64310fe28d3d947db672bd32f5f804aead0ce7" type="file"/>
+            <path value=".git/objects/d3" type="dir"/>
+            <path value=".git/objects/d3/d8359f43dcb61e5406bf516b0b36e89f922590" type="file"/>
+            <path value=".git/objects/d9" type="dir"/>
+            <path value=".git/objects/d9/1a830772cfbbd8f12899a0605a984365d33c33" type="file"/>
+            <path value=".git/objects/e3" type="dir"/>
+            <path value=".git/objects/e3/39dbb7dedd46c0789a8c6028a23ce8cbda3a89" type="file"/>
+            <path value=".git/objects/e9" type="dir"/>
+            <path value=".git/objects/e9/9405d33ece4878f1d3782ddf7696f936f499c6" type="file"/>
+            <path value=".git/objects/f9" type="dir"/>
+            <path value=".git/objects/f9/5aabcd863a5e30d0e8ca854572e9b390673ddc" type="file"/>
+            <path value=".git/objects/info" type="dir"/>
+            <path value=".git/objects/pack" type="dir"/>
+            <path value=".git/objects/pack/pack-ddfb0f63663c7ef8450f18364db90aa57681800c.idx" type="file"/>
+            <path value=".git/objects/pack/pack-ddfb0f63663c7ef8450f18364db90aa57681800c.pack" type="file"/>
+            <path value=".git/objects/pack/pack-df8c56c834ac04d076765c989ac93a814c17f42d.idx" type="file"/>
+            <path value=".git/objects/pack/pack-df8c56c834ac04d076765c989ac93a814c17f42d.pack" type="file"/>
+            <path value=".git/refs" type="dir"/>
+            <path value=".git/refs/heads" type="dir"/>
+            <path value=".git/refs/heads/master" type="file"/>
+            <path value=".git/refs/remotes" type="dir"/>
+            <path value=".git/refs/remotes/origin" type="dir"/>
+            <path value=".git/refs/remotes/origin/master" type="file"/>
+            <path value=".git/refs/tags" type="dir"/>
+        </blacklist>
+        <resFallback autoGen="true"/>
+    </package>
+</tproject>
