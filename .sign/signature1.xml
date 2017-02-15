@@ -24,7 +24,7 @@
 </Reference>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>Kge5Y74F/viFS1vcaxnn1lC497w81wgP1gHUgG5qhvA=</DigestValue>
+<DigestValue>2TXJYdMKPXRMb3aznwf+gozQmwjPuFTtr8ntgX2YalY=</DigestValue>
 </Reference>
 <Reference URI="chromeapp%2Ficon-128.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -64,7 +64,7 @@
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>JfQXUWpDDJPpUjSXhkW7q8DaPqF6ibYdW4r/RfE8BEw=</DigestValue>
+<DigestValue>spfb5RmesCP6fOijokBOZ5hXv5LgPBKkNrkivM17Va0=</DigestValue>
 </Reference>
 <Reference URI="npm-shrinkwrap.json">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -81,10 +81,6 @@
 <Reference URI="public%2Faudio%2Fbackground.mp3">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>f6C/1rviBQs7hhVxJqZf/ElOG0q/15ZvCUgNt6ySQAk=</DigestValue>
-</Reference>
-<Reference URI="public%2Faudio%2Fbackground.ogg">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>pwlsS76hQCgZHlsK+pFTNPUNm3paVc69v8+nEzSQf1M=</DigestValue>
 </Reference>
 <Reference URI="public%2Ffavicon.ico">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -108,7 +104,7 @@
 </Reference>
 <Reference URI="public%2Fm%2Fcss%2Fstyle.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>mGB5dmDDWqImCrvZEpPgG+mYDYQw4IOpJE+0n++U/Wg=</DigestValue>
+<DigestValue>mNNAhujzgG/S3wz4XgP+T7t/KD2cKZYrcIYRaejwo3M=</DigestValue>
 </Reference>
 <Reference URI="public%2Fm%2Fjs%2Fblocks.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -140,7 +136,7 @@
 </Reference>
 <Reference URI="public%2Fm%2Fjs%2Fmain.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>ZLOhrbTA+Qvkkvmssz9TomLCSQCWI7D1jzyGMDt4TdI=</DigestValue>
+<DigestValue>8HaLFf7OVBD2NhaDatMxXY8SVOLAXOorGGqHdrZ8+zw=</DigestValue>
 </Reference>
 <Reference URI="public%2Fm%2Fjs%2Fplayer.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -183,9 +179,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-Xe2CAj0hgmqKX6ILF+V9wbbdtnHgZYy5tgefMi+/0qXUzk5sLCHMMahr05wFznyS+otGAaJIToSu
-Enw3U27kiJSdZKOYX7etMsKC9bLwztaZ7fPbayCv6DwmbKz6R1IGcYmtbzEC/eA7OD39fihCO/uo
-s5+PMxLEb1gbbbPADXw=
+GbFDw5f92W3/Huw5D+CZf6xVJkO4pk8/36zTviZfxU8ml+kH8nt7iJgd8z4gZ6FWIS/XrT5Vfamw
+O6kAHHOJQ73SWOVx0wcYlu8ufVWwz02sVw0FOVEKL/WXA/wdSOjFVDOnpYBCnQDM9GGCtcB3GMdw
+D9yTtJRG7GW5xiJyFcc=
 </SignatureValue>
 <KeyInfo>
 <X509Data>

@@ -104,10 +104,18 @@ a {
 	font-size: 50px;
 }
 #left-text {
+	-moz-user-select: none;
+	-webkit-user-select: none; 
+	-ms-user-select:none; user-select:none;
+	-o-user-select:none;
 	margin-left: 40px;
     margin-top: 150%;
 }
 #right-text {
+	-moz-user-select: none;
+	-webkit-user-select: none; 
+	-ms-user-select:none; user-select:none;
+	-o-user-select:none;
 	margin-left: 30px;
     margin-top: 150%;
 }

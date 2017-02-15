@@ -15,11 +15,41 @@ var keyMap = {
 };
 
 function init() {
+	var myAudio = new Audio('public/audio/background.mp3'); 
+	myAudio.addEventListener('ended', function() {
+	    this.currentTime = 0;
+	    this.play();
+	}, false);
+	myAudio.play();
+	
+	var hidden,visibilityChange;
+	if (typeof document.hidden !== "undefined") {
+		hidden = "hidden";
+		visibilityChange = "visibilitychange";
+	} else if (typeof document.webkitHidden !== "undefined") {
+		hidden = "webkitHidden";
+		visibilityChange = "webkitvisibilitychange";
+	}
+	
+	function handleVisibilityChange(){
+	if (document[hidden]){
+		console.log("Page is now hidden.");
+		myAudio.pause();
+	    } else {
+		console.log("Page is now visible.");
+		myAudio.play();
+	    }
+	}
+	document.addEventListener(visibilityChange, handleVisibilityChange, false);
+	
 	var buttonEvent = function(e) {
 		if (e.keyName == "back") {
 			if (confirm('Realy want to exit?')) {
 				tizen.application.getCurrentApplication().exit();
-			} 
+				myAudio.pause();
+			}else{
+				myAudio.play();
+			}
 		}
 	}
 
